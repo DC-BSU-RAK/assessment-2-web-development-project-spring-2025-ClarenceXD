@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Arena Breakout About</title>
+</head>
+<body>
+    <script src="script.js"></script>
+    <nav class="navbar">
+        <div class="navdisplay">
+            <p class="navtext">Arena Breakout | S8</p>
+            <div class="HOLDnavbutton">
+                <a class="navbutton" href="index.html">Home</a>
+                <a class="navbutton" href="about.html">About</a>
+                <a class="navbutton" href="security.html">Security</a>
+    
+                
+                <a class="navbutton" href="guide.html">Beginner’s Guide</a>
+    
+                <a class="navbutton" href="creator.html">Creator Center</a>
+                <a class="navbutton" href="https://drive.google.com/uc?export=download&id=1dfmW0zkVs6nsS9v_IrJDL8UNW4tjC8HJ
+                ">Download</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+
+
+        <section class="section">
+            <video autoplay muted loop playsinline class="bg_video" id="ab_video">
+                <source id="aboutvid" src="videos/GEARUP_2.mp4" type="video/mp4" />
+                Your browser does not support the video tag ♥.
+            </video>
+            <div class="about-container">
+                <h2 id="about1">GEAR UP</h2>
+
+                <pre class="log1" id="about1.1">Load up your rucksack with supplies and ammo, 
+or travel empty for maximum mobility. 
+Light or heavy, it's all up to you.
+
+</pre>
+                <br><a href="">Learn More>></a> 
+                </div>
+                
+                <div class="Log_Swap">
+                <button onclick="about(about1Head,about1Body,about1Video)" >GEAR UP</button> 
+                <button onclick="about(about2Head,about2Body,about2Video)" >SHOOT & LOOT</button> 
+                <button onclick="about(about3Head,about3Body,about3Video)">BREAKOUT</button>
+                <button onclick="about(about4Head,about4Body,about4Video)">TRADE</button>
+                </div>
+        </section>
+        <section class="section">
+
+            <video autoplay muted loop playsinline class="bg_video" id="map_video">
+                <source id="mapvid" src="videos/tvbg.mp4" type="video/mp4" />
+                Your browser does not support the video tag ♥.
+            </video>
+
+            <h1>Maps</h1>
+            
+            <div class="icon">
+                <button class="icon_farm" onclick="map(mapbg[0])"> Farm Land </button>
+                <button class="icon_north" onclick="map(mapbg[1])"> Northridge </button>
+                <button class="icon_valley" onclick="map(mapbg[3])"> valley </button>
+                <button class="icon_tv" onclick="map(mapbg[4])"> Tv Station </button>
+                <button class="icon_armory" onclick="map(mapbg[2])"> Armory </button>
+            </div>
+
+
+
+
+
+        </section>
+
+
+
+    </div>
+
+    
+</body>
+</html>

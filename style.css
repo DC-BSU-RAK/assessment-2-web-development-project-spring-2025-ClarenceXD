@@ -1,0 +1,385 @@
+body{
+    background-color: rgb(0, 0, 0);
+    text-align: left;
+    scroll-behavior: smooth;
+    /*overflow: hidden;*/
+    margin: 0px;
+    padding: 0px;
+}
+
+.creator{
+    background-color: rgb(0, 0, 0);
+}
+
+/*Hides the scroll bar*/
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/*allows the webpage to have sectors*/
+.container {
+    height: calc(100vh - 60px);/*Remove 60px to avoid overlap with nav*/
+    overflow-y: scroll; /*Allows vertical scrolling*/
+    scroll-snap-type: y mandatory; /*locks sections verticaly*/
+    
+  }
+  
+.section {
+    height: calc(100vh - 60px);
+    scroll-snap-align: start;
+    position:relative;
+}
+
+/*Makes sure the video fits in the section*/
+.bg_video{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+    pointer-events: none; /*Allows clicks to go thur bg*/
+    z-index: -1; /*puts bg behind everything*/
+}
+
+
+.navbar{
+    background-color: rgb(129, 129, 129);
+    z-index: 1000;
+}
+
+.navdisplay{
+    display: flex;
+    align-items: stretch;
+    height: 60px;
+    justify-content: space-between; /*Sep the left and right*/
+}
+
+.HOLDnavbutton{
+    display: flex;
+    gap: 2.5px;
+}
+
+.navbutton{
+    display: flex;
+    align-items: center;        
+    justify-content: center;
+    height: 100%;
+    width: 125px;
+    color: black;
+    border-radius: 5px;
+    font-size: 1rem; 
+    background-color: #ccc;
+    text-decoration: none;
+    
+}
+
+.navbutton:hover {
+    background-color: #bbb;    
+    transform: scale(1.05);      
+}
+
+.navtext{
+    font-size: 1.5rem;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 0px;
+}
+
+
+.inlinebuttons{
+    display: block;
+    padding-top: 300px;
+    text-align: center;
+    font-size: 1rem; 
+}
+
+div.inlinebuttons #maindownload {
+    padding: 20px 40px;
+    border: 4px solid rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: black;
+}
+
+
+div.inlinebuttons #pc{
+    border: 4px solid rgb(17, 0, 255);
+    background-color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 10px 15px;
+
+}
+div.inlinebuttons #and{
+    border: 4px solid rgb(26, 216, 83);
+    background-color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+div.inlinebuttons #ios{
+    border: 4px solid rgb(255, 255, 255);
+    background-color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+
+}
+
+.padding_text{
+    padding-top: 15px;
+}
+
+
+.log-container {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    background-color: rgba(169, 169, 169, 0.508);
+    border: 3px double #000000;
+    width: 500px;
+    height: 175px;
+}
+
+.about-container {
+    padding-left: 5px;
+    position: absolute;
+    top: 22.5%;
+    left: 57.5%;
+    background-color: rgba(169, 169, 169, 0.508);
+    border: 3px double #000000;
+    width: 560px;
+    height: 200px;
+}
+
+.Log_Swap{
+    display: flex;
+    top: 75%;
+    left: 35%;
+    
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+}
+
+#log1 {
+    margin-bottom: 10px; /* adds distance between logs */
+}
+
+.textwrap{
+    padding-left: 1.5%;
+    max-width: 90vw; /*max viewport width*/
+    white-space: pre-wrap;
+}
+
+
+.reportlist{
+    margin: auto;
+    width: 60%;
+    border: 4px dotted rgb(102, 102, 102);
+    padding: 5px;
+}
+
+.report{
+    padding-left: 2%;
+    text-align: left;
+    color: white;
+    font-size: 1.2rem;
+}
+.report:hover{
+    color: blue;
+}
+.reportext{
+    padding-bottom: 2.5%;
+    padding-left: 2%;
+    font-size: 0.8rem;
+}
+.report2{
+    padding-left: 2%;
+    text-align: left;
+    color: white;
+    font-size: 1.2rem;
+}
+.report2:hover{
+    color: blue;
+}
+.reportext2{
+    padding-bottom: 2.5%;
+    padding-left: 2%;
+    font-size: 0.8rem;
+}
+
+.buttons{
+    padding: 20px 40px;
+    border: 4px solid rgb(58, 58, 58);
+    text-decoration: none;
+    color: white;
+}
+
+.buttonlayout{
+    display: flex;
+    gap: 20px;
+padding-top: 100px;
+padding-left: 50px;
+
+padding-bottom: 50px;
+}
+
+.buttonlayout a:hover{
+    color: rgb(255, 184, 6);
+}
+
+
+.guidecontainer{
+    position: absolute;
+    top: 10.5%;
+    left: 15%;
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-bottom: 100px;
+    padding-right: 100px;
+    width: 60%;
+    border: 2px solid grey;
+}
+
+.guidebuttons{
+    padding: 20px 40px;
+    border: 4px solid rgb(58, 58, 58);
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+    width: 100%;
+    background-color: #000000;
+    z-index: 30;
+}
+
+.guidevideos{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.widthbutton{
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+
+}
+
+#g1{
+    color: orange;
+}
+
+
+/*Non Class CSS*/
+
+h1{
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 55px;
+    color: white;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+h2{
+    color: white;
+}
+h3{
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    color: white;
+}
+h4{
+    text-align: center;
+    color: white;
+}
+h5{
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/*Guide*/
+h6{
+    font-size: 2.2rem;
+    color: white;
+    margin: 0px;
+}
+
+p{
+    color: white;
+}
+
+pre{
+    color: white;
+}
+
+.video-container{
+    display: flex;
+    gap: 20px; /* gap <3 */
+    justify-content: center;
+    text-align: left;
+}
+
+.video-block {
+    max-width: 600px;
+}
+
+
+/*ICONS*/
+
+.icon{
+    position: absolute;
+    top: 77.5%;
+    left: 20%;
+    display: flex;
+    gap: 75px;
+}
+.icon_farm {
+    background-image: url('images/icon_farm.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding: 30px 35px; /*control img*/
+    height: 40px;
+    font-size: 1rem;
+    color: white;
+  }
+
+.icon_valley {
+    background-image: url('images/icon_valley.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding: 30px 35px; /*control img*/
+    height: 40px;
+    font-size: 1rem;
+    color: white;
+  }
+
+.icon_north {
+    background-image: url('images/icon_north.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding: 30px 35px; /*control img*/
+    height: 40px;
+    font-size: 1rem;
+    color: white;
+  }
+
+
+.icon_tv {
+    background-image: url('images/icon_tv.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding: 30px 35px; /*control img*/
+    height: 40px;
+    font-size: 1rem;
+    color: white;
+  }
+
+.icon_armory {
+    background-image: url('images/icon_armory.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding: 30px 35px; /*control img*/
+    height: 40px;
+    font-size: 1rem;
+    color: white;
+  }
